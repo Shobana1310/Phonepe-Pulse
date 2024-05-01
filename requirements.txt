@@ -5,3 +5,4 @@ streamlit-option-menu==0.3.12
 numpy==1.26.3
 pillow==10.2.0
 python-dotenv==1.0.0
+requests==2.7.0
