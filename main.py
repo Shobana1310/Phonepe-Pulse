@@ -206,144 +206,148 @@ selected = option_menu("Navigation",
                        orientation="horizontal")
 
 if selected=='ABOUT':
-      text_to_center = "PhonePe Pulse"
-      logo_url='https://asset.brandfetch.io/idcE0OdG8i/id8Yth9ASQ.svg?updated=1668075190583'
-      st.markdown(f"""
-      <div style='text-align: center;'>
-      <img src="{logo_url}" alt="PhonePe Logo" style="width: 85px; height: auto; margin-bottom: 10px;"> 
-      <span style='background-image: linear-gradient(to right, white 0%, purple 100%);
-                     -webkit-background-clip: text;
-                     -webkit-text-fill-color: transparent;
-                     font-size: 50px; font-weight: bold; font-family: 'Araboto Normal', sans-serif;'>{text_to_center}</span>
-      </div>
-      """, unsafe_allow_html=True)
-      text_to_center1= "PhonePe Pulse offers insights on digital transaction trends in India, including popular payment methods, categories, and regional preferences. Users benefit by understanding their spending habits and market trends. Businesses leverage the data for targeted marketing and strategy adjustments. Ultimately, PhonePe Pulse enhances transparency and empowers informed financial decisions."
-      st.markdown(f"<div style='text-align: center; font-size: 20px; font-family: 'Araboto Normal', sans-serif;'>{text_to_center1}</div>", unsafe_allow_html=True)
-      with st.container():
-         left_column,right_column=st.columns(2)
-         with left_column:
-            st.write('')
-            st.write('')
-            st.write('')
-            st.write('')
-            st.header(':orange[About Top Insights 📈]')
-            st.write('**In the top analysis you can  analyze trends over time, such as fluctuations in transaction volumes, changes in popular payment methods, or shifts in spending patterns across different categories. This helps  gain a deeper understanding of how digital payments are evolving and make informed decisions based on these insights.**')
+      def showing_about_section():
+            text_to_center = "PhonePe Pulse"
+            logo_url='https://asset.brandfetch.io/idcE0OdG8i/id8Yth9ASQ.svg?updated=1668075190583'
+            st.markdown(f"""
+            <div style='text-align: center;'>
+            <img src="{logo_url}" alt="PhonePe Logo" style="width: 85px; height: auto; margin-bottom: 10px;"> 
+            <span style='background-image: linear-gradient(to right, white 0%, purple 100%);
+                           -webkit-background-clip: text;
+                           -webkit-text-fill-color: transparent;
+                           font-size: 50px; font-weight: bold; font-family: 'Araboto Normal', sans-serif;'>{text_to_center}</span>
+            </div>
+            """, unsafe_allow_html=True)
+            text_to_center1= "PhonePe Pulse offers insights on digital transaction trends in India, including popular payment methods, categories, and regional preferences. Users benefit by understanding their spending habits and market trends. Businesses leverage the data for targeted marketing and strategy adjustments. Ultimately, PhonePe Pulse enhances transparency and empowers informed financial decisions."
+            st.markdown(f"<div style='text-align: center; font-size: 20px; font-family: 'Araboto Normal', sans-serif;'>{text_to_center1}</div>", unsafe_allow_html=True)
+            with st.container():
+               left_column,right_column=st.columns(2)
+               with left_column:
+                  st.write('')
+                  st.write('')
+                  st.write('')
+                  st.write('')
+                  st.header(':orange[About Top Insights 📈]')
+                  st.write('**In the top analysis you can  analyze trends over time, such as fluctuations in transaction volumes, changes in popular payment methods, or shifts in spending patterns across different categories. This helps  gain a deeper understanding of how digital payments are evolving and make informed decisions based on these insights.**')
 
-      with st.container():
-         left_column,right_column=st.columns(2)
-         with right_column:
-            st.write('')
-            st.write('')
-            st.write('')
-            st.write('')
-            st.header(':orange[About Geo Visulization 🌐]')
-            st.write('**The map feature helps users understand where digital transactions are most prevalent geographically. This can be useful for both consumers and businesses to identify regions with high digital payment adoption rates and tailor their strategies accordingly**')
+            with st.container():
+               left_column,right_column=st.columns(2)
+               with right_column:
+                  st.write('')
+                  st.write('')
+                  st.write('')
+                  st.write('')
+                  st.header(':orange[About Geo Visulization 🌐]')
+                  st.write('**The map feature helps users understand where digital transactions are most prevalent geographically. This can be useful for both consumers and businesses to identify regions with high digital payment adoption rates and tailor their strategies accordingly**')
 
-      underline = "__________" 
-      st.markdown(f"# Purpose of PhonePe Pulse\n{underline}")
-      st.header(':violet[🛍️ Consumer Empowerment]')
-      st.write('**By providing insights into usage patterns within their own state and district, PhonePe Pulse empowers consumers with knowledge about how people in their locality utilize PhonePe, enabling them to make informed decisions about their financial activities**')
-      st.write('')
-      st.write('')
-      st.header(':violet[🧠 Business Intelligence]')
-      st.write('**For businesses, PhonePe Pulse serves as a tool for market research and business intelligence. It provides data on consumer behavior, regional preferences, and market trends, which can help businesses tailor their strategies and offerings accordingly.**')
-      st.write('')
-      st.write('')
-      st.header(':violet[💼 Market Education]')
-      st.write('**PhonePe Pulse also plays a role in educating users about the benefits and advantages of digital payments. By highlighting the growth of digital transactions and showcasing the convenience and security of digital payment methods, PhonePe Pulse contributes to increasing awareness and adoption of digital payments in India**')
-      
-      underline = "__________" 
-      st.markdown(underline)
-      st.header('About Me')
-      st.write('👋 Hi there! I am Shobana, A Passionate into Data Science And Business Solutions. With a Strong Foundation In Data Analysis And Machine Learning, I Thrive On Uncovering Actionable Insights From Complex Datasets to Drive Strategic Decision-making And Enhance Business Performance. I Am Dedicated To Continuous Learning, Always Staying On Latest Trends And Technologies In The Field')
-      
-      st.write(':blue[**LinkedIn**]')  
-      linkedin_logo="https://img.icons8.com/fluent/48/000000/linkedin.png"            # Display LinkedIn logo with a link to the profile.
-      linkedin_url="https://www.linkedin.com/in/shobana-v-534b472a2"
-      st.markdown(f"[![LinkedIn]({linkedin_logo})]({linkedin_url})")
-    
+            underline = "__________" 
+            st.markdown(f"# Purpose of PhonePe Pulse\n{underline}")
+            st.header(':violet[🛍️ Consumer Empowerment]')
+            st.write('**By providing insights into usage patterns within their own state and district, PhonePe Pulse empowers consumers with knowledge about how people in their locality utilize PhonePe, enabling them to make informed decisions about their financial activities**')
+            st.write('')
+            st.write('')
+            st.header(':violet[🧠 Business Intelligence]')
+            st.write('**For businesses, PhonePe Pulse serves as a tool for market research and business intelligence. It provides data on consumer behavior, regional preferences, and market trends, which can help businesses tailor their strategies and offerings accordingly.**')
+            st.write('')
+            st.write('')
+            st.header(':violet[💼 Market Education]')
+            st.write('**PhonePe Pulse also plays a role in educating users about the benefits and advantages of digital payments. By highlighting the growth of digital transactions and showcasing the convenience and security of digital payment methods, PhonePe Pulse contributes to increasing awareness and adoption of digital payments in India**')
+            
+            underline = "__________" 
+            st.markdown(underline)
+            st.header('About Me')
+            st.write('👋 Hi there! I am Shobana, A Passionate into Data Science And Business Solutions. With a Strong Foundation In Data Analysis And Machine Learning, I Thrive On Uncovering Actionable Insights From Complex Datasets to Drive Strategic Decision-making And Enhance Business Performance. I Am Dedicated To Continuous Learning, Always Staying On Latest Trends And Technologies In The Field')
+            
+            st.write(':blue[**LinkedIn**]')  
+            linkedin_logo="https://img.icons8.com/fluent/48/000000/linkedin.png"            # Display LinkedIn logo with a link to the profile.
+            linkedin_url="https://www.linkedin.com/in/shobana-v-534b472a2"
+            st.markdown(f"[![LinkedIn]({linkedin_logo})]({linkedin_url})")
+      showing_about_section()
+         
 
 if selected == 'HOME':
-   st.write('')
-   st.write('')
-   image_path ="https://i.postimg.cc/qqc2RRfd/phonepe-pulse.png"
-   st.image(image_path, use_column_width=True)
-   st.write('')
-   st.write('')
-   st.write('')
-   st.write('')
-   st.write('')
-   st.write('')
-   with st.container():
+   def showing_home_section():
+         st.write('')
+         st.write('')
+         image_path ="https://i.postimg.cc/qqc2RRfd/phonepe-pulse.png"
+         st.image(image_path, use_column_width=True)
+         st.write('')
+         st.write('')
+         st.write('')
+         st.write('')
+         st.write('')
+         st.write('')
+         with st.container():
+               left_column,right_column=st.columns(2)
+               with left_column:
+                  video_url = "https://www.phonepe.com/webstatic/6805/videos/page/home-fast-secure-v3.mp4"
+                  video_html = f"""
+                  <video width="100%" autoplay loop muted>
+                  <source src="{video_url}" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                  """
+
+                  st.markdown(video_html, unsafe_allow_html=True)
+               with right_column:
+                  st.header(':violet[About PhonePe]')
+                  # st.write('')
+                  # st.write('')
+                  st.write('**PhonePe is a leading digital wallet using which you can transfer money through UPI, recharge prepaid mobile, make utility bill payments, and much more. Just add your bank account details and generate a UPI ID. Without worrying about recharging your wallet, you can begin shopping safely and securely. So, go ahead and download PhonePe today to enjoy great perks of online shopping!**')
+                  image_path ="https://i.postimg.cc/Ls7WkyJ8/bs-hero-banner-image1.png"
+                  st.image(image_path,width=450)
+         st.write('')
+         st.write('')
+         st.write('')
+         with st.container():
+               left_column,right_column=st.columns(2)
+               with left_column:
+                  image_path ="https://i.postimg.cc/KjVjXjzd/earning.png"
+                  st.image(image_path,width=100)
+                  st.header(':violet[Transaction Volume Trends]')
+                  st.write('')
+                  st.write('**PhonePe Pulse provides insights into transaction volumes over time, highlighting peak periods and emerging patterns**')
+               with right_column:
+                  image_path ="https://i.postimg.cc/ZqYg77J2/speaker.png"
+                  st.image(image_path,width=100)
+                  st.header(':violet[Campaign Effectiveness]')
+                  st.write('')
+                  st.write('**Businesses can leverage PhonePe Pulse to track seasonal fluctuations in consumer spending and assess the effectiveness of marketing campaigns during specific periods.**')
+         with st.container():
+               left_column,right_column=st.columns(2)
+               with left_column:
+                  st.write('')
+                  image_path ="https://i.postimg.cc/x1FwKZ8T/chess.png"
+                  st.image(image_path,width=100)
+                  st.header(':violet[Competitive Benchmarking]')
+                  st.write('')
+                  st.write('**By comparing their performance metrics against industry benchmarks available through PhonePe Pulse, businesses can evaluate their market position and identify areas for improvement**')
+               with right_column:
+                  st.write('')
+                  image_path ="https://i.postimg.cc/gjxZkWmR/demographic.png"
+                  st.image(image_path,width=100)
+                  st.header(':violet[Consumer Demographics]')
+                  st.write('')
+                  st.write('**Through demographic data analysis, businesses can gain insights into the preferences and behaviors of different consumer segments**')
+         st.write('')
+         st.write('')
+         def download_phonepe():
+         
+            android_link = "https://play.google.com/store/apps/details?id=com.phonepe.app"
+            ios_link = "https://apps.apple.com/in/app/phonepe-secure-payments-app/id1170055821"
+
+            st.header(":violet[Download PhonePe]")
+            st.markdown("[Download on Google Play](%s)" % android_link)
+            st.markdown("[Download on the App Store](%s)" % ios_link)
+         download_phonepe()
+
+         st.header(':orange[If you Want To Know More About PhonePe,Kindly Check This]')
          left_column,right_column=st.columns(2)
          with left_column:
-            video_url = "https://www.phonepe.com/webstatic/6805/videos/page/home-fast-secure-v3.mp4"
-            video_html = f"""
-            <video width="100%" autoplay loop muted>
-            <source src="{video_url}" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-            """
-
-            st.markdown(video_html, unsafe_allow_html=True)
+            st.video('https://youtu.be/c_1H6vivsiA?si=lVPODg0axykJgeAZ')
          with right_column:
-            st.header(':violet[About PhonePe]')
-            # st.write('')
-            # st.write('')
-            st.write('**PhonePe is a leading digital wallet using which you can transfer money through UPI, recharge prepaid mobile, make utility bill payments, and much more. Just add your bank account details and generate a UPI ID. Without worrying about recharging your wallet, you can begin shopping safely and securely. So, go ahead and download PhonePe today to enjoy great perks of online shopping!**')
-            image_path ="https://i.postimg.cc/Ls7WkyJ8/bs-hero-banner-image1.png"
-            st.image(image_path,width=450)
-   st.write('')
-   st.write('')
-   st.write('')
-   with st.container():
-         left_column,right_column=st.columns(2)
-         with left_column:
-            image_path ="https://i.postimg.cc/KjVjXjzd/earning.png"
-            st.image(image_path,width=100)
-            st.header(':violet[Transaction Volume Trends]')
-            st.write('')
-            st.write('**PhonePe Pulse provides insights into transaction volumes over time, highlighting peak periods and emerging patterns**')
-         with right_column:
-            image_path ="https://i.postimg.cc/ZqYg77J2/speaker.png"
-            st.image(image_path,width=100)
-            st.header(':violet[Campaign Effectiveness]')
-            st.write('')
-            st.write('**Businesses can leverage PhonePe Pulse to track seasonal fluctuations in consumer spending and assess the effectiveness of marketing campaigns during specific periods.**')
-   with st.container():
-         left_column,right_column=st.columns(2)
-         with left_column:
-            st.write('')
-            image_path ="https://i.postimg.cc/x1FwKZ8T/chess.png"
-            st.image(image_path,width=100)
-            st.header(':violet[Competitive Benchmarking]')
-            st.write('')
-            st.write('**By comparing their performance metrics against industry benchmarks available through PhonePe Pulse, businesses can evaluate their market position and identify areas for improvement**')
-         with right_column:
-            st.write('')
-            image_path ="https://i.postimg.cc/gjxZkWmR/demographic.png"
-            st.image(image_path,width=100)
-            st.header(':violet[Consumer Demographics]')
-            st.write('')
-            st.write('**Through demographic data analysis, businesses can gain insights into the preferences and behaviors of different consumer segments**')
-   st.write('')
-   st.write('')
-   def download_phonepe():
-   
-      android_link = "https://play.google.com/store/apps/details?id=com.phonepe.app"
-      ios_link = "https://apps.apple.com/in/app/phonepe-secure-payments-app/id1170055821"
-
-      st.header(":violet[Download PhonePe]")
-      st.markdown("[Download on Google Play](%s)" % android_link)
-      st.markdown("[Download on the App Store](%s)" % ios_link)
-   download_phonepe()
-
-   st.header(':orange[If you Want To Know More About PhonePe,Kindly Check This]')
-   left_column,right_column=st.columns(2)
-   with left_column:
-      st.video('https://youtu.be/c_1H6vivsiA?si=lVPODg0axykJgeAZ')
-   with right_column:
-      st.video('https://youtu.be/Yy03rjSUIB8?si=eJRqbCm-K_RDtv0Y')
+            st.video('https://youtu.be/Yy03rjSUIB8?si=eJRqbCm-K_RDtv0Y')
+   showing_home_section()
 
 if selected=='TOP INSIGHTS':
   Analyse_method=st.radio('Select The Options',('User','Transaction','Insurance'))
@@ -1715,55 +1719,59 @@ if selected=='GEO VISUALIZATION':
                insurance_statewise2(selected_state,selected_year,selected_link,selected_coordinate,selected_zoom)
          
 if selected=='REPORT':
-   with st.container():
-           left_column, right_column = st.columns([1, 2])
-           with left_column:
-               st.header(':violet[REPORT]')
-               image_path ="https://i.postimg.cc/t4S8rRsk/Brown-Autumn-Photo-Collage.png"
-               st.image(image_path, use_column_width=True)
-           with right_column:
-               first_half, second_half = right_column.columns(2)
-               with first_half:
-                  image_path ="https://i.postimg.cc/V6mxpC0H/Edit-Logo-Design-and-Branding.png"
+   def show_report():
+            with st.container():
+               left_column, right_column = st.columns([1, 2])
+            with left_column:
+                  st.header(':violet[REPORT]')
+                  image_path ="https://i.postimg.cc/t4S8rRsk/Brown-Autumn-Photo-Collage.png"
                   st.image(image_path, use_column_width=True)
-               with second_half:
-                 st.header(':violet[You Can Download This Report Book Here ⬇️]')
-                 st.write(' ')
-                 st.write(' ')
-                 st.write(' ')
-                 st.write(' ')
-                 st.write(' ')
-                 st.write(' ')
-                 url = "https://drive.google.com/uc?export=download&id=1Z0vVoqSG1n6X0Osz-tk720pfXETjy2e9"
-                 response = requests.get(url)
-                 pdf_bytes = response.content
-                 
+            with right_column:
+                  first_half, second_half = right_column.columns(2)
+                  with first_half:
+                     image_path ="https://i.postimg.cc/V6mxpC0H/Edit-Logo-Design-and-Branding.png"
+                     st.image(image_path, use_column_width=True)
+                  with second_half:
+                     st.header(':violet[You Can Download This Report Book Here ⬇️]')
+                     st.write(' ')
+                     st.write(' ')
+                     st.write(' ')
+                     st.write(' ')
+                     st.write(' ')
+                     st.write(' ')
+                     url = "https://drive.google.com/uc?export=download&id=1Z0vVoqSG1n6X0Osz-tk720pfXETjy2e9"
+                     response = requests.get(url)
+                     pdf_bytes = response.content
+                     
 
-                  
-                 st.download_button(
-                     label="Download The Report Book",
-                     data=pdf_bytes,
-                     file_name="Report Book.pdf",
-                     mime="application/pdf"
-                  )
-                 st.write(':red[Its Done Only For Project Purpose]')
-   st.header(':violet[FAQ]')
-   with st.expander("Who is the Founder of Phonepe"):
-       st.write('**Sameer Nigam founded PhonePe in 2015 and serves as its Chief Executive Officer.**')
-   with st.expander('What Is PhonePe'):
-       st.write('**PhonePe is a mobile payment platform using which you can transfer money using UPI, recharge phone numbers, pay utility bills, etc. PhonePe works on the Unified Payment Interface (UPI) system and all you need is to feed in your bank account details and create a UPI ID**')
-   with st.expander('How many countries use PhonePe?'):
-      st.write('**PhonePe will offer the UPI services UAE, Singapore, Mauritius, Nepal and Bhutan. PhonePe, an Indian digital payments platform, primarily operates within India. Its designed to facilitate transactions within the country**')
-   with st.expander('What Is a Digital Wallet?'):
-      st.write('**A digital wallet (or electronic wallet) is a financial transaction application that runs on any connected device. It securely stores your payment information and passwords in the cloud. Digital wallets may be accessible from a computer; mobile wallets, which are a subset, are primarily used on mobile devices.**') 
-   with st.expander('What Are The Other Services PhonePe Provide?'):
-      st.write('**UPI Payments, Investment, Insurance, Recharges, DTH & More**')
-   with st.expander('How can I Get The Data Used In This Project?'):
-      url = 'https://github.com/PhonePe/pulse'
-      st.markdown(f"**Check out this** [link]({url})")
-   with st.expander('How Can I Use PhonePe Pulse'):
-      st.write('**In the top analysis section, you can find charts and analysis points. In the geo visualization section, you can explore map visualization. Finally, in the report section, you can access the project report for download**')
-   with st.expander('What is the highest transaction limit in PhonePe?'):
-      st.write('**The PhonePe UPI transaction limit is Rs. 1 lakh (Rs 100,000) daily for all users. This limit applies to both P2P and P2M transactions. The PhonePe UPI transaction limit is set by the National Payments Corporation of India (NPCI).**')
-   with st.expander('What is the mission of PhonePe?'):
-      st.write('**PhonePe core mission is centered around revolutionizing digital payments and making financial services accessible to all, bridging the gap between traditional banking and modern technology.**')
+                     
+                     st.download_button(
+                           label="Download The Report Book",
+                           data=pdf_bytes,
+                           file_name="Report Book.pdf",
+                           mime="application/pdf")
+                     st.write(':red[Its Done Only For Project Purpose]')
+   show_report()
+
+   def show_fAQ():
+      st.header(':violet[FAQ]')
+      with st.expander("Who is the Founder of Phonepe"):
+         st.write('**Sameer Nigam founded PhonePe in 2015 and serves as its Chief Executive Officer.**')
+      with st.expander('What Is PhonePe'):
+         st.write('**PhonePe is a mobile payment platform using which you can transfer money using UPI, recharge phone numbers, pay utility bills, etc. PhonePe works on the Unified Payment Interface (UPI) system and all you need is to feed in your bank account details and create a UPI ID**')
+      with st.expander('How many countries use PhonePe?'):
+         st.write('**PhonePe will offer the UPI services UAE, Singapore, Mauritius, Nepal and Bhutan. PhonePe, an Indian digital payments platform, primarily operates within India. Its designed to facilitate transactions within the country**')
+      with st.expander('What Is a Digital Wallet?'):
+         st.write('**A digital wallet (or electronic wallet) is a financial transaction application that runs on any connected device. It securely stores your payment information and passwords in the cloud. Digital wallets may be accessible from a computer; mobile wallets, which are a subset, are primarily used on mobile devices.**') 
+      with st.expander('What Are The Other Services PhonePe Provide?'):
+         st.write('**UPI Payments, Investment, Insurance, Recharges, DTH & More**')
+      with st.expander('How can I Get The Data Used In This Project?'):
+         url = 'https://github.com/PhonePe/pulse'
+         st.markdown(f"**Check out this** [link]({url})")
+      with st.expander('How Can I Use PhonePe Pulse'):
+         st.write('**In the top analysis section, you can find charts and analysis points. In the geo visualization section, you can explore map visualization. Finally, in the report section, you can access the project report for download**')
+      with st.expander('What is the highest transaction limit in PhonePe?'):
+         st.write('**The PhonePe UPI transaction limit is Rs. 1 lakh (Rs 100,000) daily for all users. This limit applies to both P2P and P2M transactions. The PhonePe UPI transaction limit is set by the National Payments Corporation of India (NPCI).**')
+      with st.expander('What is the mission of PhonePe?'):
+         st.write('**PhonePe core mission is centered around revolutionizing digital payments and making financial services accessible to all, bridging the gap between traditional banking and modern technology.**')
+   show_fAQ()
